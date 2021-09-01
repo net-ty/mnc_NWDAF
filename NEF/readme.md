@@ -3,4 +3,5 @@ This nefserver.go receives and transfers data from/to NWDAF and DAP
 The server always should be on to deliver data
 
 cd server
+
 run nefserver.go

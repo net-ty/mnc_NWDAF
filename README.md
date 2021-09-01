@@ -21,7 +21,7 @@ The server should be running continuously to deliver data
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
-DAP has a python module to train the data from NWDAF and provides meaningful results to NWDAF through NEF
+DAP (Data Analytic Platform) has a python module to train the data from NWDAF and provides meaningful results to NWDAF through NEF
 
 
 

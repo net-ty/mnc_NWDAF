@@ -22,13 +22,13 @@ func handler(rw http.ResponseWriter, req *http.Request) {
 func requestModelTraining(reqNfInstanceId string) { //TODO: Change input data 'data' to appropriate attribute
 	jsonBody := map[string]interface{}{}
 	jsonBody["reqNFInstanceID"] = reqNfInstanceId
-	jsonBody["nfService"] = "training"
+	jsonBody["nfService"] = "inference"
 	now_t := time.Now().Format("2006-01-02 15:04:05")
 	jsonBody["reqTime"] = now_t
-	jsonBody["data"] = "None"
+	jsonBody["data"] = "1"
 	jsonStr, _ := json.Marshal(jsonBody)
-	//print("*********")
-	resp, err := http.Post("http://localhost:9537", "application/json; charset=UTF-8", bytes.NewBuffer(jsonStr))
+	print("*********")
+	resp, err := http.Post("http://localhost:9537", "application/json; charset=UTF-8", bytes.NewBuffer([]byte(jsonStr)))
 	if err != nil {
 		fmt.Println("error: %v", err)
 	} else {
@@ -38,9 +38,10 @@ func requestModelTraining(reqNfInstanceId string) { //TODO: Change input data 'd
 		fmt.Println("************")
 		respBody, _ := ioutil.ReadAll(resp.Body)
 		jsonData := map[string]interface{}{}
-		_ = json.Unmarshal(respBody, &jsonData)
+		json.Unmarshal(respBody, &jsonData)
 		fmt.Println(jsonData)
 	}
+
 }
 
 func main() {

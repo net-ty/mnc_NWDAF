@@ -40,13 +40,13 @@ After Located in the function, the running this program is as follows.
 
 ##### 2) run NWDAF go module
 ```
-cd /move/to/your/path/NWDAF
+cd /move/to/your/path/nwdaf
 go run nwdaf.go
 ```
 
 ##### 3) run NWDAF python module
 ```
-cd /move/to/your/path/NWDAF/pythonmodule
+cd /move/to/your/path/nwdaf/pythonmodule
 python main.py 
 ```
 

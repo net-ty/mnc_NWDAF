@@ -1,28 +1,66 @@
-# mnc_Private-5G
-테스트베드에서 구현할 구조 설명 및 free5gc와 연동방법 설명
-![figure 1](https://user-images.githubusercontent.com/88416778/130419189-8b2debbb-1090-45da-bf32-c29ebb3b4f2b.png)
+# mnc_Public-5G
+
+This code is based on the Free5GC.
+
+The detailed description is under below.
 
 
-//////////////////////////////////////////////////////////////////////////////////////////
+## Pre setting
+### NWDAF Structure
+NWDAF (Network Data Analytics Function) is consist of two part: 1) go module; 2) python module.
 
-NWDAF (Network Data Analytics Function) analyzes data through intelligent technologies and provides analysis results to other 5G core network functions
+Go module can be run on "nwdaf.go" which located in "nwdaf" folder.
 
-Running nefserver and Pythonmodule should be preceded to run modeltraining.go / model_inference.go
+Python module can be run on "main.py" which located in "nwdaf/pythonmodule" folder.
 
-The server automatically turns off after timeouts. That time can be changed as we want
+In addition, before run this NWDAF function,
 
-//////////////////////////////////////////////////////////////////////////////////////////
+#### "nwdaf.cfg" should be located in "free5GC/config" folder.
 
-NEF (Network exposure function) stores received information as structured data and exposes it to other network functions
+Also the python module is required to 
+```
+PYTHON = 3.7
+```
+and 
+```
+Tensorflow >= 2.0
+```
+### temp_requester Structure
+temp_requester is the requester function which can be using on other NFs. 
 
-This nefserver.go receives and transfers data from/to NWDAF and DAP
+If you want to call NWDAF from other NFs, the function in this requester can be used.
 
-The server should be running continuously to deliver data
 
-//////////////////////////////////////////////////////////////////////////////////////////
+## RUN NWDAF
+After Located in the function, the running this program is as follows.
 
-DAP (Data Analytic Platform) has a python module to train the data from NWDAF and provides meaningful results to NWDAF through NEF
 
+##### 1) run NRF Function (which is in Free5GC)
+
+
+##### 2) run NWDAF go module
+```
+cd /move/to/your/path/NWDAF
+go run nwdaf.go
+```
+
+##### 3) run NWDAF python module
+```
+cd /move/to/your/path/NWDAF/pythonmodule
+python main.py 
+```
+
+##### 4) run temp_requester
+```
+cd /move/to/your/path/temp_requester
+go run temp requester
+```
+After that, you should select your number
+If "1" is selected, MTLF (model training function) is executed.
+Otherwise, "2" is selected, AnLF (analytics function) is executed.
+Then, you can try to select a number which means the dataset number.
+Now, we using the EMNIST dataset, which is in the python module.
+In temp_requester, the image is not transmitted (using the json, the data number is transmitted).
 
 
 

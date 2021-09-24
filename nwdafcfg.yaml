@@ -1,0 +1,50 @@
+info:
+  version: 1.0.1
+  description: NWDAF initial local configuration
+
+configuration:
+  nwdafName: NWDAF # the name of this AMF
+  
+  sbi: # Service-based interface information
+    scheme: http # the protocol for sbi (http or https)
+    registerIPv4: 127.0.0.38 # IP used to register to NRF
+    bindingIPv4: 127.0.0.38  # IP used to bind the service
+    port: 8000 # port used to bind the service
+
+  nrfUri: http://127.0.0.10:8000 # a valid URI of NRF
+ 
+  networkName:  # the name of this core network
+    full: free5GC
+    short: free
+  networkFeatureSupport5GS: # 5gs Network Feature Support IE, refer to TS 24.501
+    enable: true # append this IE in Registration accept or not
+    imsVoPS: 0 # IMS voice over PS session indicator (uinteger, range: 0~1)
+    emc: 0 # Emergency service support indicator for 3GPP access (uinteger, range: 0~3)
+    emf: 0 # Emergency service fallback indicator for 3GPP access (uinteger, range: 0~3)
+    iwkN26: 0 # Interworking without N26 interface indicator (uinteger, range: 0~1)
+    mpsi: 0 # MPS indicator (uinteger, range: 0~1)
+    emcN3: 0 # Emergency service support indicator for Non-3GPP access (uinteger, range: 0~1)
+    mcsi: 0 # MCS indicator (uinteger, range: 0~1)
+
+logger:
+  AMF:
+    debugLevel: info
+    ReportCaller: false
+  NAS:
+    debugLevel: info
+    ReportCaller: false
+  FSM:
+    debugLevel: info
+    ReportCaller: false
+  NGAP:
+    debugLevel: info
+    ReportCaller: false
+  Aper:
+    debugLevel: info
+    ReportCaller: false
+  PathUtil:
+    debugLevel: info
+    ReportCaller: false
+  OpenApi:
+    debugLevel: info
+    ReportCaller: false

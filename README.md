@@ -1,4 +1,4 @@
-# mnc_Public-5G
+# Public-5G NWDAF
 
 This code is based on the Free5GC.
 

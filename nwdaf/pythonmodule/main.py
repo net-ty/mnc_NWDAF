@@ -15,7 +15,7 @@ def parser():
 
         if str(data['nfService']) == 'training':
             MTLF(model)
-            data["data"] = "training finish-
+            data["data"] = "training finish"
         elif str(data['nfService']) == 'inference':
             inference_result = AnLF(model,int(data['data']))
             data["data"] = str(inference_result)

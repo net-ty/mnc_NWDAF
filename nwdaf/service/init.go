@@ -14,10 +14,12 @@ import (
 	"github.com/free5gc/path_util"
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
+	"nwdaf.com/anlf"
 	"nwdaf.com/consumer"
 	nwdaf_context "nwdaf.com/context"
 	"nwdaf.com/factory"
 	"nwdaf.com/logger"
+	"nwdaf.com/mtlf"
 	"nwdaf.com/util"
 )
 
@@ -115,8 +117,10 @@ func (nwdaf *NWDAF) Start() {
 	self := nwdaf_context.NWDAF_Self()
 	util.InitNwdafContext(self)
 
-	addr := fmt.Sprintf("%s:%d", self.BindingIPv4, self.SBIPort)
+	addr := fmt.Sprintf("127.0.0.1:24242")
 	router := logger_util.NewGinWithLogrus(logger.GinLog)
+	mtlf.AddService(router)
+	anlf.AddService(router)
 
 	profile := consumer.BuildNFInstance(self)
 	var newNrfUri string

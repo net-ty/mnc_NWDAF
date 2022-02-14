@@ -52,7 +52,7 @@ python main.py
 
 ##### 4) run temp_requester
 ```
-cd /move/to/your/path/temp_requester
+cd /move/to/your/path/nwdaf/temp_requester
 go run temp requester
 ```
 After that, you should select your number

@@ -26,3 +26,6 @@ DAP (Data Analytic Platform) has a python module to train the data from NWDAF an
 
 
 
+Note: The code available in this repo implements a NWDAF and associated testbed that is presented in the paper:
+
+T. Kim et al., "An Implementation Study of Network Data Analytic Function in 5G," 2022 IEEE International Conference on Consumer Electronics (ICCE), 2022, pp. 1-3, doi: 10.1109/ICCE53296.2022.9730290.Abstract: Network automation and intelligence are evolutionary directions in 5G, and network data analytic function (NWDAF) plays a key role to realize this vision. In this work, we present an implementation result of NWDAF in free5GC that is an open software for 3GPP mobile core networks. The implemented NWDAF module consists of 1) model training logical function (MTLF) to train the model and 2) analytics logic function (AnLF) to provide analytic results based on the trained model. We have verified the operability of NWDAF and released it through Github. Extensive experimental study will be conducted in our future work.[URL](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9730290&isnumber=9730121)

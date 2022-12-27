@@ -1,0 +1,56 @@
+time="2021-08-22T17:40:52+09:00" level=info msg=nef category=App component=NEF
+time="2021-08-22T17:40:52+09:00" level=info msg="NEF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NEF
+time="2021-08-22T17:40:52+09:00" level=info msg="config version [1.0.1]" category=CFG component=NEF
+time="2021-08-22T17:40:52+09:00" level=info msg="Server started" category=Init component=NEF
+time="2021-08-22T17:40:52+09:00" level=info msg="nefconfig Info: Version[1.0.1] Description[NEF initial local configuration]" category=Util component=NEF
+time="2021-08-22T17:43:27+09:00" level=info msg=nef category=App component=NEF
+time="2021-08-22T17:43:27+09:00" level=info msg="NEF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NEF
+time="2021-08-22T17:43:27+09:00" level=info msg="config version [1.0.1]" category=CFG component=NEF
+time="2021-08-22T17:43:27+09:00" level=info msg="Server started" category=Init component=NEF
+time="2021-08-22T17:43:27+09:00" level=info msg="nefconfig Info: Version[1.0.1] Description[NEF initial local configuration]" category=Util component=NEF
+time="2021-08-22T17:49:38+09:00" level=info msg=nef category=App component=NEF
+time="2021-08-22T17:49:38+09:00" level=info msg="NEF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NEF
+time="2021-08-22T17:49:38+09:00" level=info msg="config version [1.0.1]" category=CFG component=NEF
+time="2021-08-22T17:49:38+09:00" level=info msg="Server started" category=Init component=NEF
+time="2021-08-22T17:49:38+09:00" level=info msg="nefconfig Info: Version[1.0.1] Description[NEF initial local configuration]" category=Util component=NEF
+time="2021-08-22T18:13:19+09:00" level=info msg=nef category=App component=NEF
+time="2021-08-22T18:13:19+09:00" level=info msg="NEF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NEF
+time="2021-08-22T18:13:19+09:00" level=info msg="config version [1.0.1]" category=CFG component=NEF
+time="2021-08-22T18:13:19+09:00" level=info msg="Server started" category=Init component=NEF
+time="2021-08-22T18:13:19+09:00" level=info msg="nefconfig Info: Version[1.0.1] Description[NEF initial local configuration]" category=Util component=NEF
+time="2021-08-22T18:13:19+09:00" level=fatal msg="HTTP server setup failed: listen tcp 127.0.0.31:8000: bind: address already in use" category=Init component=NEF
+time="2021-08-23T13:31:54+09:00" level=info msg=nef category=App component=NEF
+time="2021-08-23T13:31:54+09:00" level=info msg="NEF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NEF
+time="2021-08-23T13:31:54+09:00" level=info msg="config version [1.0.1]" category=CFG component=NEF
+time="2021-08-23T13:31:54+09:00" level=info msg="Server started" category=Init component=NEF
+time="2021-08-23T13:31:54+09:00" level=info msg="nefconfig Info: Version[1.0.1] Description[NEF initial local configuration]" category=Util component=NEF
+time="2021-12-29T22:35:53+09:00" level=info msg=nef category=App component=NEF
+time="2021-12-29T22:35:53+09:00" level=info msg="NEF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NEF
+time="2021-12-29T22:35:53+09:00" level=info msg="config version [1.0.1]" category=CFG component=NEF
+time="2021-12-29T22:35:53+09:00" level=info msg="Server started" category=Init component=NEF
+time="2021-12-29T22:35:53+09:00" level=info msg="nefconfig Info: Version[1.0.1] Description[NEF initial local configuration]" category=Util component=NEF
+time="2021-12-29T22:35:53+09:00" level=fatal msg="HTTP server setup failed: listen tcp 127.0.0.31:8000: bind: address already in use" category=Init component=NEF
+time="2021-12-29T22:36:03+09:00" level=info msg=nef category=App component=NEF
+time="2021-12-29T22:36:03+09:00" level=info msg="NEF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NEF
+time="2021-12-29T22:36:03+09:00" level=info msg="config version [1.0.1]" category=CFG component=NEF
+time="2021-12-29T22:36:03+09:00" level=info msg="Server started" category=Init component=NEF
+time="2021-12-29T22:36:03+09:00" level=info msg="nefconfig Info: Version[1.0.1] Description[NEF initial local configuration]" category=Util component=NEF
+time="2021-12-29T22:36:03+09:00" level=fatal msg="HTTP server setup failed: listen tcp 127.0.0.31:8000: bind: address already in use" category=Init component=NEF
+time="2021-12-29T22:47:14+09:00" level=info msg=nef category=App component=NEF
+time="2021-12-29T22:47:14+09:00" level=info msg="NEF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NEF
+time="2021-12-29T22:47:14+09:00" level=info msg="config version [1.0.1]" category=CFG component=NEF
+time="2021-12-29T22:47:14+09:00" level=info msg="Server started" category=Init component=NEF
+time="2021-12-29T22:47:14+09:00" level=info msg="nefconfig Info: Version[1.0.1] Description[NEF initial local configuration]" category=Util component=NEF
+time="2021-12-29T22:47:14+09:00" level=fatal msg="HTTP server setup failed: listen tcp 127.0.0.31:8000: bind: address already in use" category=Init component=NEF
+time="2022-01-05T16:00:21+09:00" level=info msg=nef category=App component=NEF
+time="2022-01-05T16:00:21+09:00" level=info msg="NEF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NEF
+time="2022-01-05T16:00:21+09:00" level=info msg="config version [1.0.1]" category=CFG component=NEF
+time="2022-01-05T16:00:21+09:00" level=info msg="Server started" category=Init component=NEF
+time="2022-01-05T16:00:21+09:00" level=info msg="nefconfig Info: Version[1.0.1] Description[NEF initial local configuration]" category=Util component=NEF
+time="2022-01-05T16:00:21+09:00" level=fatal msg="HTTP server setup failed: listen tcp 127.0.0.31:8000: bind: address already in use" category=Init component=NEF
+time="2022-01-06T20:24:56+09:00" level=info msg=nef category=App component=NEF
+time="2022-01-06T20:24:56+09:00" level=info msg="NEF version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=NEF
+time="2022-01-06T20:24:56+09:00" level=info msg="config version [1.0.1]" category=CFG component=NEF
+time="2022-01-06T20:24:56+09:00" level=info msg="Server started" category=Init component=NEF
+time="2022-01-06T20:24:56+09:00" level=info msg="nefconfig Info: Version[1.0.1] Description[NEF initial local configuration]" category=Util component=NEF
+time="2022-01-06T20:24:56+09:00" level=fatal msg="HTTP server setup failed: listen tcp 127.0.0.31:8000: bind: address already in use" category=Init component=NEF

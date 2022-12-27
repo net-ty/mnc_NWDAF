@@ -1,0 +1,100 @@
+time="2021-08-22T17:43:04+09:00" level=info msg=webui category=App component=WebUI
+time="2021-08-22T17:43:04+09:00" level=info msg="webconsole version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=WebUI
+time="2021-08-22T17:43:04+09:00" level=warning msg="Webconsole config without log level setting!!!" category=Init component=WebUI
+time="2021-08-22T17:43:04+09:00" level=info msg="Server started" category=Init component=WebUI
+time="2022-08-26T00:04:41-07:00" level=info msg=webui category=App component=WebUI
+time="2022-08-26T00:04:41-07:00" level=info msg="webconsole version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=WebUI
+time="2022-08-26T00:04:41-07:00" level=warning msg="Webconsole config without log level setting!!!" category=Init component=WebUI
+time="2022-08-26T00:04:41-07:00" level=info msg="Server started" category=Init component=WebUI
+time="2022-08-26T00:04:48-07:00" level=info msg="| 304 |  192.168.56.101 | GET     | / | " category=GIN component=WebUI
+time="2022-08-26T00:04:48-07:00" level=info msg="| 404 |  192.168.56.101 | GET     | /static/js/main.63f851df.js | " category=GIN component=WebUI
+time="2022-08-26T00:04:49-07:00" level=info msg="| 404 |  192.168.56.101 | GET     | /static/js/main.63f851df.js | " category=GIN component=WebUI
+time="2022-08-26T00:05:05-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | / | " category=GIN component=WebUI
+time="2022-08-26T00:05:05-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /static/js/main.20785ce6.js | " category=GIN component=WebUI
+time="2022-08-26T00:05:05-07:00" level=info msg="| 304 |  192.168.56.101 | GET     | /static/media/free5gc_logo.adcdb325.png | " category=GIN component=WebUI
+time="2022-08-26T00:05:07-07:00" level=info msg="| 304 |  192.168.56.101 | GET     | /static/media/Pe-icon-7-stroke.b38ef310.woff | " category=GIN component=WebUI
+time="2022-08-26T00:05:07-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-08-26T00:05:07-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-08-26T00:05:07-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-08-26T00:05:16-07:00" level=info msg="Get All Subscribers List" category=WebUI component=WebUI
+time="2022-08-26T00:05:16-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber | " category=GIN component=WebUI
+time="2022-08-26T00:05:21-07:00" level=info msg="Get All Subscribers List" category=WebUI component=WebUI
+time="2022-08-26T00:05:21-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber | " category=GIN component=WebUI
+time="2022-08-26T00:05:22-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-08-26T00:05:22-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-08-26T00:05:22-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-08-26T00:05:22-07:00" level=info msg="Get All Subscribers List" category=WebUI component=WebUI
+time="2022-08-26T00:05:22-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber | " category=GIN component=WebUI
+time="2022-08-26T00:05:23-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-08-26T00:05:24-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-08-26T00:05:24-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-09-25T04:37:58-07:00" level=info msg=webui category=App component=WebUI
+time="2022-09-25T04:37:58-07:00" level=info msg="webconsole version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=WebUI
+time="2022-09-25T04:37:58-07:00" level=warning msg="Webconsole config without log level setting!!!" category=Init component=WebUI
+time="2022-09-25T04:37:58-07:00" level=info msg="Server started" category=Init component=WebUI
+time="2022-09-25T04:37:59-07:00" level=info msg="| 304 |  192.168.56.101 | GET     | / | " category=GIN component=WebUI
+time="2022-09-25T04:37:59-07:00" level=info msg="| 304 |  192.168.56.101 | GET     | /static/js/main.20785ce6.js | " category=GIN component=WebUI
+time="2022-09-25T04:38:40-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /static/media/free5gc_logo.adcdb325.png | " category=GIN component=WebUI
+time="2022-09-25T04:38:42-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /static/media/Pe-icon-7-stroke.b38ef310.woff | " category=GIN component=WebUI
+time="2022-09-25T04:38:42-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-09-25T04:38:42-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-09-25T04:38:42-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-09-25T04:38:44-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-09-25T04:38:44-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-09-25T04:38:44-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-09-25T04:38:46-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-09-25T04:38:46-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-09-25T04:38:46-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-09-25T04:38:47-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-09-25T04:38:47-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-09-25T04:38:47-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-09-25T04:38:48-07:00" level=info msg="Get All Subscribers List" category=WebUI component=WebUI
+time="2022-09-25T04:38:48-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber | " category=GIN component=WebUI
+time="2022-09-25T04:40:15-07:00" level=info msg="Post One Subscriber Data" category=WebUI component=WebUI
+time="2022-09-25T04:40:15-07:00" level=info msg="| 201 |  192.168.56.101 | POST    | /api/subscriber/imsi-208930000000005/20893 | " category=GIN component=WebUI
+time="2022-09-25T04:40:15-07:00" level=info msg="Get All Subscribers List" category=WebUI component=WebUI
+time="2022-09-25T04:40:15-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber | " category=GIN component=WebUI
+time="2022-09-25T04:40:17-07:00" level=info msg="Get One Subscriber Data" category=WebUI component=WebUI
+time="2022-09-25T04:40:17-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber/[object Object]/undefined | " category=GIN component=WebUI
+time="2022-09-25T04:40:29-07:00" level=info msg="Post One Subscriber Data" category=WebUI component=WebUI
+time="2022-09-25T04:40:29-07:00" level=info msg="| 201 |  192.168.56.101 | POST    | /api/subscriber/imsi-208930000000005/20893 | " category=GIN component=WebUI
+time="2022-09-25T04:40:29-07:00" level=info msg="Get All Subscribers List" category=WebUI component=WebUI
+time="2022-09-25T04:40:29-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber | " category=GIN component=WebUI
+time="2022-09-25T04:40:35-07:00" level=info msg="Get All Subscribers List" category=WebUI component=WebUI
+time="2022-09-25T04:40:35-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber | " category=GIN component=WebUI
+time="2022-09-25T04:40:35-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-09-25T04:40:35-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-09-25T04:40:35-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-09-25T04:40:37-07:00" level=info msg="Get All Subscribers List" category=WebUI component=WebUI
+time="2022-09-25T04:40:37-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber | " category=GIN component=WebUI
+time="2022-09-25T04:40:38-07:00" level=info msg="Get All Subscribers List" category=WebUI component=WebUI
+time="2022-09-25T04:40:38-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber | " category=GIN component=WebUI
+time="2022-09-25T04:40:38-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-09-25T04:40:38-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-09-25T04:40:38-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-09-25T04:40:39-07:00" level=info msg="Get All Subscribers List" category=WebUI component=WebUI
+time="2022-09-25T04:40:39-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber | " category=GIN component=WebUI
+time="2022-09-25T04:40:40-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-09-25T04:40:40-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-09-25T04:40:40-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-09-25T04:40:41-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-09-25T04:40:41-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-09-25T04:40:41-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-09-25T04:40:41-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-09-25T04:40:41-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-09-25T04:40:41-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-09-25T04:57:39-07:00" level=info msg=webui category=App component=WebUI
+time="2022-09-25T04:57:39-07:00" level=info msg="webconsole version:  \n\tNot specify ldflags (which link version) during go build\n\tgo version: go1.14.4 linux/amd64" category=App component=WebUI
+time="2022-09-25T04:57:39-07:00" level=warning msg="Webconsole config without log level setting!!!" category=Init component=WebUI
+time="2022-09-25T04:57:39-07:00" level=info msg="Server started" category=Init component=WebUI
+time="2022-09-25T04:57:51-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | / | " category=GIN component=WebUI
+time="2022-09-25T04:57:52-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /static/media/free5gc_logo.adcdb325.png | " category=GIN component=WebUI
+time="2022-09-25T04:57:52-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /favicon.ico | " category=GIN component=WebUI
+time="2022-09-25T04:58:01-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /static/media/Pe-icon-7-stroke.b38ef310.woff | " category=GIN component=WebUI
+time="2022-09-25T04:58:01-07:00" level=info msg="Get Registered UE Context" category=WebUI component=WebUI
+time="2022-09-25T04:58:01-07:00" level=error msg="Get \"http://127.0.0.18:8000/namf-oam/v1/registered-ue-context\": dial tcp 127.0.0.18:8000: connect: connection refused" category=WebUI component=WebUI
+time="2022-09-25T04:58:01-07:00" level=info msg="| 500 |  192.168.56.101 | GET     | /api/registered-ue-context | " category=GIN component=WebUI
+time="2022-09-25T04:58:11-07:00" level=info msg="Get All Subscribers List" category=WebUI component=WebUI
+time="2022-09-25T04:58:11-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber | " category=GIN component=WebUI
+time="2022-09-25T04:58:13-07:00" level=info msg="Get One Subscriber Data" category=WebUI component=WebUI
+time="2022-09-25T04:58:13-07:00" level=info msg="| 200 |  192.168.56.101 | GET     | /api/subscriber/[object Object]/undefined | " category=GIN component=WebUI

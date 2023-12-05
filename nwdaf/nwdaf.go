@@ -12,22 +12,14 @@ import (
 	"nwdaf.com/service"
 )
 
-// func main() {
-// 	message := service.Hello("servicehello")
-// 	fmt.Println(message)
-// 	message2 := logger.Hello("loggerhello")
-// 	fmt.Println(message2)
-// 	message3 := factory.Hello("factoryhello")
-// 	fmt.Println(message3)
-
-// }
-
 var NWDAF = &service.NWDAF{}
 
 var appLog *logrus.Entry
 
 func init() {
 	appLog = logger.AppLog
+	//appLog = logger.NfLog
+	// TODO check the config because the modifications changed how much info is logged
 }
 
 func main() {

@@ -4,7 +4,7 @@ This code was designed to run on the free5GC 5G core and its detailed descriptio
 
 ## Tested Environment Configuration
 
-As the execution environment has many components, the tested working version of each is listed down below:
+As the execution environment has many components, the tested working versions of the main ones are listed down below:
 
 - python: 3.8.10 (works with 3.7.x too)
 - pip: 23.3.1
@@ -33,15 +33,22 @@ sudo apt install python3 python3-pip
 pip install --upgrade pip
 ```
 
-2. Install Flask
+2. Install Python required packages
+```
+pip install -r requirements.txt
+```
+
+3. Install Flask
 ```
 pip install flask
 ```
-3. Install TensorFlow
+
+4. Install TensorFlow
 ```
 pip install tensorflow
 ```
-4. Add Go Lang support
+
+5. Add Go Lang support
 
 **NOTE:** If Go version specified on [the first section](./README.md#tested-environment-configuration) is already installed, skip this step
 

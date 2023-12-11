@@ -9,8 +9,11 @@ As the execution environment has many components, the tested working version of 
 - python: 3.8.10 (works with 3.7.x too)
 - pip: 23.3.1
 - tensorflow: 2.13.1
+- keras: 2.13.1
 - flask: 3.0.0
 - go: 1.18.10
+- free5GC: v3.3.0
+- Ubuntu Server 20.04.3
 
 **NOTE:** List updated on December, 2023
 
@@ -18,11 +21,11 @@ As the execution environment has many components, the tested working version of 
 
 Detailed instructions won't be added here as it isn't in the scope of this document, however as a general advice you should install the free5GC and then follow [these instructions](https://free5gc.org/guide/5-install-ueransim/#5-setting-free5gc-and-ueransim-parameters) configuring the IP address on AMF, SMF and UPF configuration files.
 
-**TIP:** One should change the loopback IP (127.0.0.1) to the one used by the LAN interface
+**TIP:** One should change the loopback IPs (127.0.0.x) to the one used by the LAN interface
 
 ## Install the prerequisites
 
-In this section the commands ... BASH console
+**NOTE:** In this section the commands are supported on a BASH console
 
 1. Install Python3 and pip
 ```
@@ -40,7 +43,11 @@ pip install tensorflow
 ```
 4. Add Go Lang support
 
-If another version of Go was installed, remove the existing version and install Go 1.18.10 using:
+**NOTE:** If Go version specified on [the first section](./README.md#tested-environment-configuration) is already installed, skip this step
+
+**TIP:** Check Go version using the command `go version` on console
+
+If another version of Go was previously installed, remove the existing version and install Go 1.18.10 using:
 ```
 sudo rm -rf /usr/local/go
 wget https://dl.google.com/go/go1.18.10.linux-amd64.tar.gz
@@ -61,7 +68,7 @@ source ~/.bashrc
 
 ## Install the NWDAF module
 
-### 1. Clone the repository inside the free5GC folder
+### 1. Clone the repository inside the `free5GC` folder
 ```
 cd ~/free5gc/
 git clone -b mnc_Public-5G https://github.com/oliveiraleo/mnc_NWDAF.git
@@ -74,6 +81,12 @@ cp mnc_NWDAF/nwdafcfg.yaml config/.
 
 ### 3. Load some required Go packages
 
+First, change the working directory to the NWDAF's one
+
+```
+cd ~/free5gc/mnc_NWDAF/nwdaf
+```
+Then load the packages below
 ```
 go mod download github.com/antonfisher/nested-logrus-formatter
 go get nwdaf.com/service
@@ -82,14 +95,11 @@ go mod download github.com/free5gc/version
 
 ### 4. Install the NWDAF on free5GC
 
-TODO: Conferir esses paths aqui
-
 ```
-cd ~/mnc_NWDAF/nwdaf
+cd ~/free5gc/mnc_NWDAF/nwdaf
 go build -o nwdaf nwdaf.go
-cd ../
-cp -r nwdaf ../free5gc/.
-cd ~/free5gc/nwdaf/
+cd ~/free5gc/
+cp -r mnc_NWDAF/nwdaf .
 ```
 
 ## Running the Execution Environment
@@ -100,25 +110,31 @@ Execute the components in the following order:
 3. python module
 4. temp_requester
 
-\* NRF is required to be running
+\* NRF must be running
 
 ### To run NWDAF go module
 ```
-cd /move/to/your/path/nwdaf
+cd ~/free5gc/nwdaf/
+./nwdaf
+# OR
 go run nwdaf.go
 ```
 
+Now the NWDAF should be running
+
 ### To run NWDAF python module
 ```
-cd /move/to/your/path/nwdaf/pythonmodule
+cd ~/free5gc/nwdaf/pythonmodule/
 python main.py 
 ```
 
 ### To run temp_requester
 ```
-cd /move/to/your/path/nwdaf/temp_requester
-go run temp requester
+cd ~/free5gc/nwdaf/Temp_Requester/
+go run temp_requester.go
 ```
+
+TODO: Format the text on the paragraph below or remove it
 
 After that, you should select your number
 If "1" is selected, MTLF (model training function) is executed.
@@ -128,8 +144,6 @@ Now, we using the EMNIST dataset, which is in the python module.
 In temp_requester, the image is not transmitted (using the json, the data number is transmitted).
 
 ## Configuring and Using UERANSIM
-
-TODO: Confirm if it's necessary or not
 
 ### 1. Install UERANSIM
 
@@ -181,7 +195,7 @@ build/nr-gnb -c config/free5gc-gnb.yaml
 sudo build/nr-ue -c config/free5gc-ue.yaml
 ```
 
-TODO: Finish merging the info below
+<!-- TODO: Finish merging the info below
 
 ### NWDAF Structure
 NWDAF (Network Data Analytics Function) is consist of two part: 1) go module; 2) python module.
@@ -193,4 +207,4 @@ Python module can be run on "main.py" which located in "nwdaf/pythonmodule" fold
 ### temp_requester Structure
 temp_requester is the requester function which can be using on other NFs. 
 
-If you want to call NWDAF from other NFs, the function in this requester can be used.
+If you want to call NWDAF from other NFs, the function in this requester can be used. -->

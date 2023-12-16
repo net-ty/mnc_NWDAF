@@ -141,13 +141,16 @@ cd ~/free5gc/nwdaf/Temp_Requester/
 go run temp_requester.go
 ```
 
-TODO: Format the text on the paragraph below or remove it
+<!-- TODO: Format the text below or remove it -->
 
 After that, you should select your number
+
 If "1" is selected, MTLF (model training function) is executed.
+
 Otherwise, "2" is selected, AnLF (analytics function) is executed.
+
 Then, you can try to select a number which means the dataset number.
-Now, we using the EMNIST dataset, which is in the python module.
+For now, we are using the EMNIST dataset, which is in the python module.
 In temp_requester, the image is not transmitted (using the json, the data number is transmitted).
 
 ## Configuring and Using UERANSIM
@@ -193,7 +196,9 @@ Change `127.0.0.1` to the LAN IP from free5GC's machine
 
 Use the webconsole for that, the detailed instructions are [located here](https://free5gc.org/guide/5-install-ueransim/#4-use-webconsole-to-add-an-ue)
 
-### 4. To run UERANSIM, use:
+### 4. To run UERANSIM
+
+Use the commands below
 
 ```
 # gnb
@@ -202,7 +207,33 @@ build/nr-gnb -c config/free5gc-gnb.yaml
 sudo build/nr-ue -c config/free5gc-ue.yaml
 ```
 
-<!-- TODO: Finish merging the info below
+## Citation
+
+Please, cite this work as
+
+ Kim, T., Kim, J., Ko, H., Seo, S., Jcon, Y., Jeong, H., Lee, S., & Pack, S. (2022). An Implementation Study of Network Data Analytic Function in 5G. *2022 IEEE International Conference on Consumer Electronics (ICCE)*, 1–3. https://doi.org/10.1109/ICCE53296.2022.9730290
+
+Or use the Latex code below
+
+```
+@inproceedings{Kim_Kim_Ko_Seo_Jcon_Jeong_Lee_Pack_2022,
+   author={Kim, Taeyun and Kim, Joonwoo and Ko, Haneul and Seo, Sangwon and Jcon, Youbin and Jeong, Hyeonjae and Lee, Seunghyun and Pack, Sangheon}, 
+   title={An Implementation Study of Network Data Analytic Function in 5G}, 
+   year={2022}, 
+   month={01}, 
+   pages={1–3},
+   address={Las Vegas, NV, USA},
+   ISBN={978-1-66544-154-4}, 
+   url={https://ieeexplore.ieee.org/document/9730290/}, 
+   DOI={10.1109/ICCE53296.2022.9730290}, 
+   booktitle={2022 IEEE International Conference on Consumer Electronics (ICCE)}, 
+   publisher={IEEE}
+   }
+```
+
+<!-- TODO: Finish merging the info below -->
+
+## Aditional Information
 
 ### NWDAF Structure
 NWDAF (Network Data Analytics Function) is consist of two part: 1) go module; 2) python module.
@@ -214,4 +245,4 @@ Python module can be run on "main.py" which located in "nwdaf/pythonmodule" fold
 ### temp_requester Structure
 temp_requester is the requester function which can be using on other NFs. 
 
-If you want to call NWDAF from other NFs, the function in this requester can be used. -->
+If you want to call NWDAF from other NFs, the function in this requester can be used.

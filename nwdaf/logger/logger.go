@@ -1,20 +1,17 @@
 package logger
 
 import (
-	"os"
-	"time"
-
-	formatter "github.com/antonfisher/nested-logrus-formatter"
 	"github.com/sirupsen/logrus"
 
-	"github.com/free5gc/logger_conf"
-	"github.com/free5gc/logger_util"
+	//"github.com/free5gc/logger_conf"
+	//"github.com/free5gc/logger_util"
+	logger_util "github.com/free5gc/util/logger"
 )
 
-var log *logrus.Logger
-
 var (
+	Log         *logrus.Logger
 	AppLog      *logrus.Entry
+	NfLog       *logrus.Entry
 	InitLog     *logrus.Entry
 	CfgLog      *logrus.Entry
 	ContextLog  *logrus.Entry
@@ -25,41 +22,39 @@ var (
 )
 
 func init() {
-	log = logrus.New()
-	log.SetReportCaller(false)
-
-	log.Formatter = &formatter.Formatter{
-		TimestampFormat: time.RFC3339,
-		TrimMessages:    true,
-		NoFieldsSpace:   true,
-		HideKeys:        true,
-		FieldsOrder:     []string{"component", "category"},
+	fieldsOrder := []string{
+		logger_util.FieldNF,
+		logger_util.FieldCategory,
 	}
 
-	free5gcLogHook, err := logger_util.NewFileHook(logger_conf.Free5gcLogFile, os.O_CREATE|os.O_APPEND|os.O_RDWR, 0o666)
-	if err == nil {
-		log.Hooks.Add(free5gcLogHook)
-	}
+	Log = logger_util.New(fieldsOrder)
 
-	selfLogHook, err := logger_util.NewFileHook(logger_conf.NfLogDir+"nwdaf.log", os.O_CREATE|os.O_APPEND|os.O_RDWR, 0o666)
-	if err == nil {
-		log.Hooks.Add(selfLogHook)
-	}
+	// Old vars
+	//AppLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "App"})
+	//InitLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "Init"})
+	//CfgLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "CFG"})
+	//ContextLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "Context"}) // TODO Verify if still required
+	//CtxLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "CTX"})
+	//ConsumerLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "Consumer"})
+	//GinLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "GIN"})
+	//UtilLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "Util"})
 
-	AppLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "App"})
-	InitLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "Init"})
-	CfgLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "CFG"})
-	ContextLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "Context"})
-	CtxLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "CTX"})
-	ConsumerLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "Consumer"})
-	GinLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "GIN"})
-	UtilLog = log.WithFields(logrus.Fields{"component": "NWDAF", "category": "Util"})
+	// New vars
+	NfLog = Log.WithField(logger_util.FieldNF, "NWDAF")
+	AppLog = NfLog.WithField(logger_util.FieldCategory, "App")
+	InitLog = NfLog.WithField(logger_util.FieldCategory, "Init")
+	CfgLog = NfLog.WithField(logger_util.FieldCategory, "CFG")
+	ContextLog = NfLog.WithField(logger_util.FieldCategory, "Context")
+	CtxLog = NfLog.WithField(logger_util.FieldCategory, "CTX")
+	GinLog = NfLog.WithField(logger_util.FieldCategory, "GIN")
+	UtilLog = NfLog.WithField(logger_util.FieldCategory, "Util")
+	ConsumerLog = NfLog.WithField(logger_util.FieldCategory, "Consumer")
 }
 
 func SetLogLevel(level logrus.Level) {
-	log.SetLevel(level)
+	Log.SetLevel(level)
 }
 
 func SetReportCaller(set bool) {
-	log.SetReportCaller(set)
+	Log.SetReportCaller(set)
 }
